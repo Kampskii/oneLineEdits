@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.HBox?>
@@ -14,6 +15,7 @@
             <Button fx:id="saveButton" mnemonicParsing="false" onAction="#userSavedText" text="Save?" />
          </children>
       </HBox>
+      <ListView fx:id="listboi" prefHeight="200.0" prefWidth="200.0" />
       <TextArea fx:id="bigTextBoi" prefHeight="200.0" prefWidth="200.0" />
    </children>
 </VBox>

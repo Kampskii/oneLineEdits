@@ -14,12 +14,12 @@ public class Controller {
 
     public void userSavedText() {
         String textToSave1 = textField1.getText();
-        bigTextBoi.setText(textToSave1);
+        String oldText = bigTextBoi.getText();
+        bigTextBoi.setText(textToSave1 + oldText);
         bigTextBoi.setDisable(false);
         textField1.setText("");
         saveButton.setText("Saved :)");
-        saveButton.setDisable(true);
-
+        saveButton.setDisable(false);
         listboi.getItems().add(textToSave1);
     }
 }
